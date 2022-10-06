@@ -20,8 +20,6 @@ export const find = async (name : string): Promise<Player> => {
         return response.json();
     })
 
-    console.log(playerRequest)
-
     const playerRank = await fetch("https://euw1.api.riotgames.com/lol/league/v4/entries/by-summoner/"+playerRequest.id, {
         method: 'GET',
         headers: {
@@ -31,8 +29,6 @@ export const find = async (name : string): Promise<Player> => {
     }).then(function(response){ 
         return response.json();
     })
-
-    console.log(playerRank)
 
     const player :Player = {
         name:playerRequest.name, 
