@@ -1,8 +1,6 @@
 /**
  * Data Model Interfaces
  */
-
-import { METHODS } from "http";
 import { Player } from "./player.interface";
 
 /**
