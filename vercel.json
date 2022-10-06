@@ -2,8 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.ts",
-        "use": "@now/node"
+        "src": "/(.*)",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
